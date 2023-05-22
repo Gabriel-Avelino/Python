@@ -1,0 +1,16 @@
+some = input('Digite algo: ')
+
+print('Tipo: {}'.format(type(some)))
+print('É alfanumérico?: {}'.format(some.isalnum()))
+print('São letras: {}'.format(some.isalpha()))
+print('É um código ASCII: {}'.format(some.isascii()))
+print('É um número decimal: {}'.format(some.isdecimal()))
+print('É um dígito: {}'.format(some.isdigit()))
+print('É um identificador: {}'.format(some.isidentifier()))
+print('São letras minúsculas: {}'.format(some.islower()))
+print('São números: {}'.format(some.isnumeric()))
+print('Pode ser impresso: {}'.format(some.isprintable()))
+print('São espaços: {}'.format(some.isspace()))
+print('É um título: {}'.format(some.istitle()))
+# Possui uma letra maiúscula no início e o restante das letras são minúsculas
+print('São letras maiúsculas: {}'.format(some.isupper()))

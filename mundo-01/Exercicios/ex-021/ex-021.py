@@ -5,6 +5,8 @@ pygame.init()
 
 musica = input('Digite o nome do arquivo de áudio com sua extensão: ')
 
+print('Tocando "{}" usando player pygame'.format(musica))
+
 # Obtenha o caminho absoluto do diretório atual
 diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 

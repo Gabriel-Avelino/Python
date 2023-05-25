@@ -1,4 +1,6 @@
 import os
-file = "videoplayback.mp3"
-print('Tocando "Comigo Estás" de Paulo Baruk usando player nativo')
+os.chdir("./musicas-desafio16")
+file = input("Digite a música que você deseja tocar: ")
+
+print('Tocando "{}" usando player nativo'.format(file))
 os.system("afplay " + file)

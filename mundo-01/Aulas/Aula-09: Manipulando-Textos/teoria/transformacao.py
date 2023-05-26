@@ -12,4 +12,3 @@ print(frase)
 print(frase.strip())  # Remove os espaços em branco no início e no final da cadeia que não estão sendo utilizados.
 print(frase.rstrip())   # Remove os espaços em branco que estão a direita da cadeia que não estão sendo utilizados.
 print(frase.lstrip())   # Remove os espaços em branco que estão a esquerda da cadeia que não estão sendo utilizados.
-

@@ -1,4 +1,4 @@
-num = input('Digite um número inteiro entre 0 e 9999: ')
+num = input('Digite um número inteiro entre 0 e 9999: ').strip()
 
 separado = num.replace('', ' ').split()
 print('''O número digitado foi {0}

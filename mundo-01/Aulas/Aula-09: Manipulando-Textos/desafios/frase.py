@@ -1,6 +1,6 @@
 from unicodedata import normalize
 
-frase = input('Digite uma frase: ')
+frase = input('Digite uma frase: ').strip()
 normalizada = normalize('NFD', frase)
 
 print('''A frase digitada foi: {}

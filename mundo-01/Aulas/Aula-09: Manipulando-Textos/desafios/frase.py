@@ -7,6 +7,6 @@ print(normalizada)
 
 print('''A frase digitada foi: {}
 Quantas vezes aparece a letra A: {}
-Em que posição ela aparece primeiro?: {}ª
-Em que posição ela aparece pela última vez: {}ª
+Em que posição ela aparece primeiro?: {}ª posição
+Em que posição ela aparece pela última vez: {}ª posição
 '''.format(frase, normalizada.upper().count('A'), normalizada.upper().find('A')+1, normalizada.upper().rfind('A')+1))

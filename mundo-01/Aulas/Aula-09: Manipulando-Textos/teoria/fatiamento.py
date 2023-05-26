@@ -1,5 +1,5 @@
 # As strings (também conhecidas como cadeias de caracteres) são textos que podem ser passados para variáveis ou diretamente para o usuário:
-frase = 'Curso em Vídeo Python.'
+frase = 'Curso em Vídeo Python'
 # Ao armazenar essa string, o Python cria pequenos espaços na memória do computador e adiciona os caracteres em cada um desses espaços.
 # Essa divisão permite uma série de ações dentro dessa string.
 # A primeira delas é o fatiamento, que pode ser feito de várias maneiras:

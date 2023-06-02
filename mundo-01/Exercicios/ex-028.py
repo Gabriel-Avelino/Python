@@ -1,5 +1,5 @@
 from random import randint
-from  time import sleep
+from time import sleep
 
 num = randint(0, 5)
 print('-=-' * 30, '\nVou pensar em um número entre 0 e 5. Tente adivinhar...')

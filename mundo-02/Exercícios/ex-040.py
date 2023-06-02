@@ -10,7 +10,7 @@ cores = {'limpa': '\033[m',
          'ciano': '\033[36m',
          'cinza': '\033[37m',
          'azul-claro': '\033[96m',
-         'verde-claro': '\092[32m'
+         'verde-claro': '\033[92m'
          }
 media = (nota1 + nota2) / 2
 

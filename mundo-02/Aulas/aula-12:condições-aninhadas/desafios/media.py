@@ -15,7 +15,7 @@ media /= 2
 
 if media < 5:
     print('{1}Sua média foi: {0}.{2} Você foi REPROVADO!{3}'.format(media, cores['azul'], cores['vermelho'], cores['limpa']))
-elif media == 5 and media < 6.9:
+elif 5 <= media < 6.9:
     print('{1}Sua média foi: {0}.{2} Você está de RECUPERAÇÃO!{3}'.format(media, cores['azul'], cores['amarelo'], cores['limpa']))
 else:
     print('{1}Sua média foi: {0}.{2} Você foi APROVADO!{3}'.format(media, cores['azul'], cores['verde'], cores['limpa']))

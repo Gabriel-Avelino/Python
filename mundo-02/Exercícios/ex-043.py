@@ -20,7 +20,7 @@ elif 18.5 <= imc < 25:
     print('{}PARABÉNS, você está na faixa de PESO NORMAL'.format(cores['verde']))
 elif 25 <= imc < 30:
     print('{}Você está em SOBREPESO!'.format(cores['amarelo']))
-elif 30 <= imc <= 40:
+elif 30 <= imc < 40:
     print('{}Você está em OBESIDADE!'.format(cores['vermelho']))
 else:
     print('{}Você está em OBESIDADE MÓRBIDA, cuidado!'.format(cores['cinza']))

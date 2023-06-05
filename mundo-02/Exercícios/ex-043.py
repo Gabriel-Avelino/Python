@@ -13,7 +13,7 @@ cores = {'limpa': '\033[m',
 
 imc = peso / (altura ** 2)
 
-print('{1}O IMC dessa pessoa é de {0}'. format(imc, cores['ciano']))
+print('{1}O IMC dessa pessoa é de {0:.1f}'. format(imc, cores['ciano']))
 if imc < 18.5:
     print('{}Você está ABAIXO DO PESO normal'.format(cores['azul']))
 elif 18.5 <= imc < 25:

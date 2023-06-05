@@ -17,10 +17,10 @@ cores = {'limpa': '\033[m',
 if a - b < c < a + b and a - c < b < a + c and b - c < a < b + c:
     if a == b == c:
         tipo = '\033[37mEQUILÁTERO'
-    elif a == b != c or a != b == c or a == c != b:
-        tipo = '\033[94mISÓSCELES'
-    else:
+    elif a != b != c != a:
         tipo = '\033[33mESCALENO'
+    else:
+        tipo = '\033[94mISÓSCELES'
     print('{1}Os segmentos acima {2}PODEM FORMAR{1} um triângulo {0}{1}!'.format(tipo, cores['ciano'], cores['verde']))
 else:
     print('{0}Os segmentos acima {1}NÃO PODEM FORMAR{0} um triângulo'.format(cores['ciano'], cores['vermelho']))

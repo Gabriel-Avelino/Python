@@ -14,7 +14,7 @@ cores = {'limpa': '\033[m',
 if b - c < a < b + c and c - a < b < c + a and b - a < c < b + a:
     if a == b == c:
         tipo = 'Equilátero'
-    elif a == b != c or a != b == c:
+    elif a == b != c or a != b == c or a == c != b:
         tipo = 'Isósceles'
     else:
         tipo = 'Escaleno'

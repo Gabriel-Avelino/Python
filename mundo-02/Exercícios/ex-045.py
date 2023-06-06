@@ -30,13 +30,13 @@ Jogador jogou {1}\033[m'''.format(computador, jogador))
     if jogador == computador:
         msg = '\033[37mEMPATE'
     elif jogador == 'PEDRA' and computador == 'TESOURA':
-        msg = '\033[92mJOGADOR VENCEU'
+        msg = '\033[92mJOGADOR VENCE'
     elif jogador == 'PAPEL' and computador == 'PEDRA':
-        msg = '\033[92mJOGADOR VENCEU'
+        msg = '\033[92mJOGADOR VENCE'
     elif jogador == 'TESOURA' and computador == 'PAPEL':
-        msg = '\033[92mJOGADOR VENCEU'
+        msg = '\033[92mJOGADOR VENCE'
     else:
-        msg = '\033[91mCOMPUTADOR VENCEU'
+        msg = '\033[91mCOMPUTADOR VENCE'
     print(msg)
 else:
     print('\033[31mSelecione uma opção válida.')

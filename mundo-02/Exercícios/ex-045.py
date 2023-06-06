@@ -8,19 +8,21 @@ jogador = str(input('''\033[36mSuas opções:
 \033[34m[ 2 ] \033[33mTESOURA
 \033[37mQual é a sua jogada? ''')).upper()
 computador = choice(game)
+
 print('\033[33mJO')
 sleep(1)
 print('KEM')
 sleep(1)
 print('PO\033[m')
+
 if jogador == '0' or jogador == 'PEDRA':
     jogador = 'PEDRA'
 elif jogador == '1' or jogador == 'PAPEL':
     jogador = 'PAPEL'
 elif jogador == '2' or jogador == 'TESOURA':
     jogador = 'TESOURA'
-print('-=' * 11)
 
+print('-=' * 11)
 if jogador == 'PEDRA' or jogador == 'PAPEL' or jogador == 'TESOURA':
     print('''\033[35mComputador jogou {0}
 Jogador jogou {1}\033[m'''.format(computador, jogador))

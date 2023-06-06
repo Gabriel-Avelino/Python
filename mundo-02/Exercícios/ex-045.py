@@ -6,7 +6,7 @@ jogador = str(input('''\033[36mSuas opções:
 \033[34m[ 0 ] \033[33mPEDRA
 \033[34m[ 1 ] \033[33mPAPEL
 \033[34m[ 2 ] \033[33mTESOURA
-\033[37mQual é a sua jogada? ''')).upper()
+\033[37mQual é a sua jogada? ''')).upper().strip()
 computador = choice(game)
 
 print('\033[33mJO')

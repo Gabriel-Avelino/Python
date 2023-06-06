@@ -13,7 +13,7 @@ print('\033[33mJO')
 sleep(1)
 print('KEM')
 sleep(1)
-print('PO\033[m')
+print('PO!!!\033[m')
 
 if jogador == '0' or jogador == 'PEDRA':
     jogador = 'PEDRA'

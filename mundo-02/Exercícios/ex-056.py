@@ -10,7 +10,7 @@ for c in range(1, 5):
 
     soma += idade
 
-    if sexo == 'M'and idade > idadeVelho:
+    if sexo == 'M' and idade > idadeVelho:
         idadeVelho = idade
         maisVelho = nome
     elif sexo == 'F' and idade < 20:

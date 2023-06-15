@@ -27,7 +27,7 @@ while opcao != '5':
                 maior = valor2
             print('Entre {} e {} o maior valor é {}'.format(valor1, valor2, maior))
         else:
-            print('Os dois valores são iguais')
+            print('Os valores {} e {} são iguais'.format(valor1, valor2))
     elif opcao == '4' or opcao == 'NOVOS NÚMEROS':
         opcao = '4'
         print('Informe os números novamente:')

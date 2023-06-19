@@ -10,6 +10,10 @@ jogadorNum = 0
 soma = 0
 c = 0
 
+print('=-' * 15)
+print('VAMOS JOGAR PAR OU ÍMPAR')
+print('=-' * 15)
+
 while True:
     vez = choice(proximo)
     if vez == 'JOGADOR':
@@ -19,6 +23,7 @@ while True:
     [ 1 ] PAR
     [ 2 ] ÍMPAR
 Sua escolha: ''')).upper().strip()[0]
+
             if jogadorEscolha == 'P' or jogadorEscolha == '1':
                 jogadorEscolha = 'PAR'
                 break
@@ -27,6 +32,7 @@ Sua escolha: ''')).upper().strip()[0]
                 break
             else:
                 print('Selecione uma opção válida')
+            print('-' * 30)
 
         if jogadorEscolha == 'PAR':
             computEscolha = 'ÍMPAR'
@@ -38,15 +44,17 @@ Sua escolha: ''')).upper().strip()[0]
             jogadorEscolha = 'PAR'
         else:
             jogadorEscolha = 'ÍMPAR'
+
     print(f'Computador: "{computEscolha}"')
     sleep(1)
     print(f'Jogador: "{jogadorEscolha}"')
+    print('-' * 30)
 
     computNum = randint(0, 10)
     jogadorNum = int(input('Digite um número de 1 a 10: '))
 
     soma = computNum + jogadorNum
-
+    print('-' * 30)
     if soma % 2 == 0 and jogadorEscolha == 'PAR':
         print(f'''Eu escolhi {computNum}
 Você escolheu {jogadorNum}
@@ -57,16 +65,18 @@ PARABÉNS! VOCÊ VENCEU!''')
     elif soma % 2 != 0 and jogadorEscolha == 'ÍMPAR':
         print(f'''Eu escolhi {computNum}
 Você escolheu {jogadorNum}
-A soma deu {soma}
-PARABÉNS! VOCÊ VENCEU!''')
+A soma deu {soma}''')
+        print('-' * 30)
+        print('PARABÉNS! VOCÊ VENCEU! VAMOS JOGAR NOVAMENTE...')
+        print('=-' * 15)
         c += 1
 
     else:
         print(f'''Eu escolhi {computNum}
 Você escolheu {jogadorNum}
-A soma deu {soma}
-EU VENCI!''')
+A soma deu {soma}''')
+        print('-' * 30)
+        print('EU VENCI!')
+        print('=-' * 15)
         break
 print(f'Você venceu {c} rodadas seguidas')
-
-

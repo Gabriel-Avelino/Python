@@ -1,8 +1,5 @@
-maisDe18 = 0
-homens = 0
-mulheresMenos20 = 0
-sexo = ''
-continuar = ''
+maisDe18 = homens = mulheresMenos20 = 0
+sexo = continuar = ''
 
 while True:
     print('-' * 40)

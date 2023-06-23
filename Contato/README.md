@@ -1,2 +1,0 @@
-# Formulário-de-contato-js
-Repositório para o protótipo de formulário de contato com JS, HTML e CSS. Para executar será necessário utilizar a extensão live server e alterar o endereço de IP no link de redirecionamento presente na tag input com name "redirectTo" presente no index.html.

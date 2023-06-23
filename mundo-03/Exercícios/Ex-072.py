@@ -6,5 +6,12 @@ while True:
     if pos > 20 or pos < 0:
         print('Tente novamente.', end=' ')
     else:
-        break
-print(f'Você digitou o número {nums[pos]}')
+        print(f'Você digitou o número {nums[pos]}')
+        continuar = ''
+        while continuar not in ('S', 'N'):
+            continuar = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+        if continuar == 'N':
+            break
+print('=' * 35)
+print('PROGRAMA FINALIZADO! Volte sempre!')
+

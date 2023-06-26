@@ -14,7 +14,7 @@ while continuar != 'N':
 
     if num > maior:
         maior = num
-    if menor == 0:
+    if c == 1:
         menor = num
     elif num < menor:
         menor = num

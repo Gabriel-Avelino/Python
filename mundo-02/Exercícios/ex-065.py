@@ -10,6 +10,8 @@ while opcao in 'S':
     c += 1
     if num > maior:
         maior = num
+    if c == 1:
+        menor = num
     if num < menor:
         menor = num
 

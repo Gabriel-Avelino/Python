@@ -5,7 +5,7 @@ menorPeso = 0
 
 while True:
     dados.append(str(input('Nome: ')).strip())
-    dados.append(int(input('Peso: ')))
+    dados.append(float(input('Peso: ')))
     pessoas.append(dados[:])
     dados.clear()
 

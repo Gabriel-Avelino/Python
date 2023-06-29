@@ -6,7 +6,6 @@ for c in range(0, 3):
     matriz.append(linha[:])
     linha.clear()
 
-
 print('-=' * 30)
 for c, l in enumerate(matriz):
     for i, e in enumerate(l):

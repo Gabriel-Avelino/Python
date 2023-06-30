@@ -10,7 +10,7 @@ print('-=' * 30)
 for c, l in enumerate(matriz):
     for i, e in enumerate(l):
         if i == 0 and c > 0:
-            print(f'\n{f"[ {e:^6} ]":^6}', end=' ')
+            print(f'\n[ {e:^5} ]', end=' ')
         else:
-            print(f'{f"[ {e:^6} ]":^6}', end=' ')
+            print(f'[ {e:^5} ]', end=' ')
 

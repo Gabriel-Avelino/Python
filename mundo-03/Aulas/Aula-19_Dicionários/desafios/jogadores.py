@@ -31,3 +31,15 @@ print('-' * 35)
 for c, j in enumerate(jogadores):
     print(f'{c:>3}{j["nome"]:>8}   {str(j["gols"]):<8}{j["total de gols"]:>10}')
 print('-' * 35)
+
+while True:
+    pesquisa = str('Mostrar dados de qual jogador? ').strip().title()
+
+    if pesquisa.isnumeric():
+        pesquisa = int(pesquisa)
+
+    if pesquisa == 'Para' or pesquisa == 999:
+        break
+
+    encontrado = ''
+

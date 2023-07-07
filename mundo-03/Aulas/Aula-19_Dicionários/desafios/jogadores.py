@@ -1,3 +1,5 @@
+from unidecode import unidecode
+
 jogadores = []
 ficha = {}
 gols = []
@@ -33,7 +35,7 @@ for c, j in enumerate(jogadores):
 print('-' * 35)
 
 while True:
-    pesquisa = str('Mostrar dados de qual jogador? ').strip().title()
+    pesquisa = str(input('Mostrar dados de qual jogador? ')).strip().title()
 
     if pesquisa.isnumeric():
         pesquisa = int(pesquisa)
@@ -42,4 +44,20 @@ while True:
         break
 
     encontrado = ''
-
+    for i, jog in enumerate(jogadores):
+        if isinstance(pesquisa, str):
+            if pesquisa == unidecode(jog['nome']):
+                print(f'-- LEVANTAMENTO DO JOGADOR {jog["nome"]}:')
+                for m, gol in enumerate(jog['gols']):
+                    print(f'No jogo {m + 1} fez {gol}')
+                    encontrado = True
+        elif isinstance(pesquisa, int):
+            if pesquisa == i:
+                print(f'-- LEVANTAMENTO DO JOGADOR {jog["nome"]}:')
+                for m, gol in enumerate(jog['gols']):
+                    print(f'No jogo {m + 1} fez {gol}')
+                    encontrado = True
+    if not encontrado:
+        print(f'ERRO! Não existe jogador {pesquisa}! Tente novamente')
+    print('-' * 35)
+print('<< VOLTE SEMPRE >>')

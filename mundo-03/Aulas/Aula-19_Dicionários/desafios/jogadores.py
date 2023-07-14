@@ -27,12 +27,17 @@ while True:
         continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if continuar == 'N':
         break
-print('-=' * 35)
-print(f'{"Cód":<4}{"Nome":<10}{"Gols":<10}{"Total":>13}')
-print('-' * 35)
-for c, j in enumerate(jogadores):
-    print(f'{c:>3}{j["nome"]:>8}   {str(j["gols"]):<8}{j["total de gols"]:>10}')
-print('-' * 35)
+print('-=' * 40)
+for i in ficha.keys():
+    print(f'{i:<15}', end='')
+print()
+print('-' * 40)
+for k, v in enumerate(jogadores):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end=' ')
+    print()
+print('-' * 40)
 
 while True:
     pesquisa = str(input('Mostrar dados de qual jogador? ')).strip().title()

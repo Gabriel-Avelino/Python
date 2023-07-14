@@ -4,6 +4,7 @@ ficha = dict()
 gols = []
 
 while True:
+    ficha.clear()
     ficha['nome'] = str(input('Nome do Jogador: ')).strip().title()
     quantidade = int(input(f'Quantas partidas {ficha["nome"]} jogou? '))
 
@@ -13,7 +14,6 @@ while True:
     gols.clear()
     ficha['total'] = sum(ficha['gols'])
     jogadores.append(ficha.copy())
-    ficha.clear()
 
     continuar = ''
     while continuar not in ['S', 'N']:
@@ -24,33 +24,39 @@ while True:
         break
 
 print('-=' * 30)
-print(f'{"cod":<4}{"nome":<10}{"gols":<10}{"total":>10}')
-print('-' * 35)
-for i, j in enumerate(jogadores):
-    print(f'{i:>3} {j["nome"]:<8}  {str(j["gols"]):<8}{j["total"]:>8}')
-
+print('cod ', end='')
+for i in ficha.keys():
+    print(f'{i:<15}', end='')
+print()
+print('-' * 40)
+for k, v in enumerate(jogadores):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end=' ')
+    print()
+print('-' * 40)
 while True:
-    pesquisa = str(input('Mostrar dados de qual jogador? ')).strip().title()
+    pesquisa = str(input('Mostrar dados de qual jogador? (999 ou "parar" para encerar)')).strip().title()
 
     if pesquisa.isnumeric():
         pesquisa = int(pesquisa)
 
-    if pesquisa == 'Para' or pesquisa == 999:
+    if pesquisa == 'Parar' or pesquisa == 999:
         break
 
     encontrado = ''
     for i, jog in enumerate(jogadores):
         if isinstance(pesquisa, str):
-            if pesquisa == unidecode(jog['nome']):
+            if unidecode(pesquisa) == unidecode(jog['nome']):
                 print(f'-- LEVANTAMENTO DO JOGADOR {jog["nome"]}:')
                 for m, gol in enumerate(jog['gols']):
-                    print(f'No jogo {m + 1} fez {gol}')
+                    print(f'    No jogo {m + 1} fez {gol}')
                     encontrado = True
         elif isinstance(pesquisa, int):
             if pesquisa == i:
                 print(f'-- LEVANTAMENTO DO JOGADOR {jog["nome"]}:')
                 for m, gol in enumerate(jog['gols']):
-                    print(f'No jogo {m + 1} fez {gol}')
+                    print(f'    No jogo {m + 1} fez {gol}')
                     encontrado = True
     if not encontrado:
         print(f'ERRO! Não existe jogador {pesquisa}! Tente novamente')

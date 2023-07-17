@@ -18,12 +18,12 @@ def contador(ini, end, count):
     for c in range(ini, end, count):
         sleep(0.5)
         print(c, end=' ')
-    sleep(1)
+    sleep(0.5)
     print('FIM!')
 
 
 contador(1, 10, 1)
-contador(10, 0, 1)
+contador(10, 0, 2)
 print('-=' * 20)
 print('Agora é a sua vez de personalizar a contagem!')
 contador(int(input('Início: ')), int(input('Fim: ')), int(input('Passo: ')))

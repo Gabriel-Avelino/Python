@@ -4,12 +4,12 @@ from time import sleep
 numeros = []
 
 
-def sorteio():
+def sorteio(lista):
     for c in range(0, 5):
-        numeros.append(randint(1, 10))
+        lista.append(randint(1, 10))
 
     print('Sorteando 5 valores da lista: ', end='')
-    for v in numeros:
+    for v in lista:
         sleep(.5)
         print(v, end=' ')
     sleep(.5)
@@ -24,5 +24,5 @@ def somapar(lst):
     print(f'Somando os valores {lst}, temos {total}')
 
 
-sorteio()
+sorteio(numeros)
 somapar(numeros)

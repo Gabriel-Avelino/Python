@@ -13,9 +13,8 @@ def contador(inicio, fim, passo):
         if passo > 0:
             passo = -passo
     for c in range(inicio, fim, passo):
-        sleep(.5)
         print(c, end=' ')
-    sleep(.5)
+        sleep(.5)
     print('FIM!')
 
 

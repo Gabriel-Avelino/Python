@@ -1,4 +1,5 @@
-from  time import  sleep
+from time import sleep
+
 print('{:^30}'.format('Usando while'))
 print('=-=' * 10, '\n')
 

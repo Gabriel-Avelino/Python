@@ -1,5 +1,5 @@
 expressao = str(input('Digite a expressão: ')).strip().replace('', ' ').split()
-pilha =[]
+pilha = []
 
 for simb in expressao:
     if simb == '(':

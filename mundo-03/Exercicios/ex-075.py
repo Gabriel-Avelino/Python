@@ -9,7 +9,7 @@ if 3 in nums:
 else:
     print('O valor 3 não foi digitado em nenhuma posição')
 
-print('Os valores pares digitados foram', end= ' ')
+print('Os valores pares digitados foram', end=' ')
 for n in nums:
     if n % 2 == 0:
         print(n, end=' ')

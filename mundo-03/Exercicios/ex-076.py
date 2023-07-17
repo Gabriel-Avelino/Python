@@ -3,7 +3,7 @@ produtos = ('Lápis', 1.75, 'Borracha', 2, 'Caderno', 15.90, 'Estojo', 25, 'Tran
 
 print('-' * 43)
 print(f'{"LISTAGEM DE PREÇOS":^40}')
-print('-'* 43)
+print('-' * 43)
 
 for pos, p in enumerate(produtos):
     if pos % 2 == 0:

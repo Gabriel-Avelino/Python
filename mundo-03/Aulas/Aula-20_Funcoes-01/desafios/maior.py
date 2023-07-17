@@ -2,19 +2,19 @@ from time import sleep
 
 
 def maior(*nums):
-    maior = 0
+    maiorvalor = 0
     print('-=' * 20)
     print('Analisando os valores passados...')
     for c, v in enumerate(nums):
         print(v, end=' ')
         sleep(.5)
         if c == 0:
-            maior = v
+            maiorvalor = v
         else:
-            if v > maior:
-                maior = v
+            if v > maiorvalor:
+                maiorvalor = v
     print(f'Foram informados {len(nums)} valores ao todo.')
-    print(f'O maior valor informado foi {maior}.')
+    print(f'O maior valor informado foi {maiorvalor}.')
 
 
 maior(2, 9, 4, 5, 7, 1)

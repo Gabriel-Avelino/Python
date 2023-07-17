@@ -9,4 +9,4 @@ cores = {'limpa': '\033[m',
          'verde': '\033[32m'
          }
 
-print ("A soma dos dois números é: ", cores['verde'], result, cores['limpa'])
+print("A soma dos dois números é: ", cores['verde'], result, cores['limpa'])

@@ -1,4 +1,5 @@
 from datetime import date
+
 ano = int(input('\033[33mAno de Nascimento: '))
 cores = {'limpa': '\033[m',
          'azul': '\033[34m',

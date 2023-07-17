@@ -5,11 +5,14 @@ def maior(*nums):
     maior = 0
     print('-=' * 20)
     print('Analisando os valores passados...')
-    for v in nums:
+    for c, v in enumerate(nums):
         print(v, end=' ')
         sleep(.5)
-        if v > maior:
+        if c == 0:
             maior = v
+        else:
+            if v > maior:
+                maior = v
     print(f'Foram informados {len(nums)} valores ao todo.')
     print(f'O maior valor informado foi {maior}.')
 

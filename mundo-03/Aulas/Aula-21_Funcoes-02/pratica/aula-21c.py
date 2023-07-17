@@ -5,8 +5,8 @@ def parouimpar(num=0):
         return False
 
 
-num = int(input('Digite um número: '))
-if parouimpar(num):
+n = int(input('Digite um número: '))
+if parouimpar(n):
     print('É par!')
 else:
     print('Não é par!')

@@ -2,6 +2,12 @@ from datetime import date
 
 
 def voto(nascimento):
+    """
+    -> Mostra se a pessoa possui direito ao voto ou não e se ele é obrigatório.
+    :param nascimento: Data de nascimento usada para calcular a idade.
+    :return: idade, status
+    """
+
     idade = date.today().year - nascimento
     status = ''
     if idade < 16:

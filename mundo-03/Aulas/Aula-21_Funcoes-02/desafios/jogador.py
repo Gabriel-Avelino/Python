@@ -15,12 +15,12 @@ def ficha(name, gols=0):
 
 print()
 print('-' * 30)
-nome_jogador = input('Nome do Jogador: ')
+nome_jogador = input('Nome do Jogador: ').strip().title()
 num_gols = input('Número de Gols: ')
 
-if num_gols == '':
-    num_gols = 0
-else:
+if num_gols.isnumeric():
     num_gols = int(num_gols)
+else:
+    num_gols = 0
 
 print(f'O jogador {ficha(nome_jogador, num_gols)[0]} fez {ficha(nome_jogador, num_gols)[1]} gol(s) no campeonato.')

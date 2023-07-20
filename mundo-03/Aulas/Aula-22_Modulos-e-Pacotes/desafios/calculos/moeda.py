@@ -1,16 +1,16 @@
-from formatacao import moeda
+from calculos.formatacao import formatar
 
 
 def metade(value, form=False):
     if form:
-        return moeda(value/2)
+        return formatar(value / 2)
     else:
         return value / 2
 
 
 def dobro(value, form=False):
     if form:
-        return moeda(value * 2)
+        return formatar(value * 2)
     else:
         return value * 2
 
@@ -18,7 +18,7 @@ def dobro(value, form=False):
 def aumentar(value, por, form=False):
     value += (por/100) * value
     if form:
-        return moeda(value)
+        return formatar(value)
     else:
         return value
 
@@ -26,6 +26,6 @@ def aumentar(value, por, form=False):
 def diminuir(value, por, form=False):
     value -= (por/100) * value
     if form:
-        return moeda(value)
+        return formatar(value)
     else:
         return value

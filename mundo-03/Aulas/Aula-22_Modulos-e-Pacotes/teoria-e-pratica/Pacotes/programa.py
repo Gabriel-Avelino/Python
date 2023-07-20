@@ -1,5 +1,5 @@
 # Quando os módulos se tornam muito grandes, podemos utilizar os pacotes, pastas que reúnem vários códigos.
-# Para criar um pacote, basta criar uma estrutura de pastas, onde em cada uma delas haverá um arquivo '__init__.py'.
+# Para criar um pacote, basta criar uma estrutura de pastas, onde em cada uma delas haverá um arquivo 'ini.py'.
 # Esse arquivo irá conter nossas funções:
 
 from uteis import numbers

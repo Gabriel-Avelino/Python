@@ -1,6 +1,6 @@
 def moeda(v):
     v = f'R${v:.2f}'
-    return v
+    return str(v).replace('.', ',')
 
 
 def metade(value, form=False):

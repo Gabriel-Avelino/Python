@@ -1,9 +1,10 @@
 def leianumero(msg):
     while True:
         preco = str(input(msg)).strip()
-        if ',' in preco:
-            preco = preco.replace(',', '.')
-        if preco.isdigit():
+        precolimpo = preco.replace(',', '').replace('.', '')
+        if precolimpo.isdigit():
+            if ',' in preco:
+                preco = preco.replace(',', '.')
             preco = float(preco)
             return preco
         else:

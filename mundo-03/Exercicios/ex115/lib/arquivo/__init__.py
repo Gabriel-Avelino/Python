@@ -1,4 +1,4 @@
-from lib.interface import  *
+from lib.interface import *
 
 
 def arquivoexiste(nome):

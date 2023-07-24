@@ -1,5 +1,6 @@
 from lib.interface import  *
 
+
 def arquivoexiste(nome):
     try:
         a = open(nome, 'rt')

@@ -10,14 +10,16 @@ def cadastrar():
         else:
             break
 
-
     while True:
         try:
             age = int(input('Idade: '))
             adicionar(name, age)
             break
-        except:
+        except (ValueError, TypeError):
             print('\033[31mERRO: digite um número inteiro válido.\033[m')
+        except KeyboardInterrupt:
+            print('\n\033[31mO usuário preferiu não digitar esse número.\033[m')
+            return 0
 
 
 def adicionar(nome, idade):

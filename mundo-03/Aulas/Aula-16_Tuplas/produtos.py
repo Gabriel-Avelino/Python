@@ -5,15 +5,9 @@ for pos, c in enumerate(produtos):
         produto = c
     else:
         valor = c
-        if len(str(valor)) == 2:
-            diferença = 1
-        elif len(str(valor)) == 3:
-            diferença = 2
-        elif len(str(valor)) == 4:
-            diferença = 3
-        elif len(str(valor)) == 6:
-            diferença = 5
-        else:
+        if len(str(valor)) == 1:
             diferença = 0
+        else:
+            diferença = len(str(valor)) - 1
         pontos = 40 - len(str(produto)) - diferença
         print(f'{produto}{"." * pontos}R${valor}')
